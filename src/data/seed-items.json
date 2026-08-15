@@ -1,0 +1,477 @@
+{
+  "provenance": {
+    "source": "seed",
+    "fetchedAt": null,
+    "note": "Hand-seeded starter set. Mechanics and tags are reliable; exact numbers, tiers and sizes drift every balance patch. Run `npm run fetch-data` on a machine that can reach bazaardb.gg to replace this with the full authoritative dataset."
+  },
+  "items": [
+    {
+      "id": "bar-of-gold",
+      "name": "Bar of Gold",
+      "hero": "Common",
+      "size": "Small",
+      "startingTier": "Gold",
+      "tags": ["Loot"],
+      "tooltips": ["This has a very high value.", "Sell this to gain gold."]
+    },
+    {
+      "id": "cutlass",
+      "name": "Cutlass",
+      "hero": "Vanessa",
+      "size": "Medium",
+      "startingTier": "Bronze",
+      "tags": ["Weapon"],
+      "tooltips": ["Deal damage."]
+    },
+    {
+      "id": "blunderbuss",
+      "name": "Blunderbuss",
+      "hero": "Vanessa",
+      "size": "Medium",
+      "startingTier": "Silver",
+      "tags": ["Weapon", "Ammo"],
+      "tooltips": ["Deal damage.", "Multicast 2.", "Ammo: this can only be used while it has ammo."]
+    },
+    {
+      "id": "cannon",
+      "name": "Cannon",
+      "hero": "Vanessa",
+      "size": "Large",
+      "startingTier": "Silver",
+      "tags": ["Weapon"],
+      "tooltips": ["Deal heavy damage."]
+    },
+    {
+      "id": "anchor",
+      "name": "Anchor",
+      "hero": "Vanessa",
+      "size": "Medium",
+      "startingTier": "Bronze",
+      "tags": ["Weapon", "Aquatic"],
+      "tooltips": ["Deal damage.", "Slow an enemy item for 2 seconds."]
+    },
+    {
+      "id": "harpoon",
+      "name": "Harpoon",
+      "hero": "Vanessa",
+      "size": "Medium",
+      "startingTier": "Silver",
+      "tags": ["Weapon", "Aquatic"],
+      "tooltips": ["Deal damage.", "This gains damage permanently for the rest of the fight."]
+    },
+    {
+      "id": "chum",
+      "name": "Chum",
+      "hero": "Vanessa",
+      "size": "Small",
+      "startingTier": "Bronze",
+      "tags": ["Aquatic"],
+      "tooltips": ["Your Aquatic items gain crit chance for the fight."]
+    },
+    {
+      "id": "pufferfish",
+      "name": "Pufferfish",
+      "hero": "Vanessa",
+      "size": "Small",
+      "startingTier": "Silver",
+      "tags": ["Aquatic", "Friend"],
+      "tooltips": ["Apply poison to the enemy."]
+    },
+    {
+      "id": "jellyfish",
+      "name": "Jellyfish",
+      "hero": "Vanessa",
+      "size": "Small",
+      "startingTier": "Bronze",
+      "tags": ["Aquatic", "Friend"],
+      "tooltips": ["Apply poison to the enemy.", "Slow an enemy item."]
+    },
+    {
+      "id": "submarine",
+      "name": "Submarine",
+      "hero": "Vanessa",
+      "size": "Large",
+      "startingTier": "Gold",
+      "tags": ["Aquatic", "Vehicle"],
+      "tooltips": ["Deal damage.", "Your Aquatic items gain haste for 2 seconds."]
+    },
+    {
+      "id": "crows-nest",
+      "name": "Crow's Nest",
+      "hero": "Vanessa",
+      "size": "Medium",
+      "startingTier": "Silver",
+      "tags": ["Aquatic"],
+      "tooltips": ["Your Weapons gain haste for 3 seconds."]
+    },
+    {
+      "id": "powder-keg",
+      "name": "Powder Keg",
+      "hero": "Vanessa",
+      "size": "Medium",
+      "startingTier": "Silver",
+      "tags": ["Weapon"],
+      "tooltips": ["Deal heavy damage.", "Burn the enemy."]
+    },
+    {
+      "id": "spyglass",
+      "name": "Spyglass",
+      "hero": "Vanessa",
+      "size": "Small",
+      "startingTier": "Bronze",
+      "tags": ["Tool"],
+      "tooltips": ["Your Weapons gain crit chance for the fight."]
+    },
+    {
+      "id": "fishing-net",
+      "name": "Fishing Net",
+      "hero": "Vanessa",
+      "size": "Medium",
+      "startingTier": "Bronze",
+      "tags": ["Aquatic", "Tool"],
+      "tooltips": ["Slow all enemy items for 2 seconds."]
+    },
+    {
+      "id": "first-mate",
+      "name": "First Mate",
+      "hero": "Vanessa",
+      "size": "Medium",
+      "startingTier": "Gold",
+      "tags": ["Friend"],
+      "tooltips": ["Your Weapons gain damage for each Weapon you have."]
+    },
+    {
+      "id": "lemonade-stand",
+      "name": "Lemonade Stand",
+      "hero": "Pygmalien",
+      "size": "Medium",
+      "startingTier": "Bronze",
+      "tags": ["Property"],
+      "tooltips": ["Gain gold at the start of each day.", "This has increased income."]
+    },
+    {
+      "id": "gumball-machine",
+      "name": "Gumball Machine",
+      "hero": "Pygmalien",
+      "size": "Small",
+      "startingTier": "Silver",
+      "tags": ["Property"],
+      "tooltips": ["Your Property items gain value permanently."]
+    },
+    {
+      "id": "piggy-bank",
+      "name": "Piggy Bank",
+      "hero": "Pygmalien",
+      "size": "Small",
+      "startingTier": "Bronze",
+      "tags": ["Property", "Loot"],
+      "tooltips": ["This gains value permanently at the start of each day.", "Sell this to gain gold."]
+    },
+    {
+      "id": "dumbbell",
+      "name": "Dumbbell",
+      "hero": "Pygmalien",
+      "size": "Small",
+      "startingTier": "Bronze",
+      "tags": ["Weapon"],
+      "tooltips": ["Deal damage.", "This gains damage permanently at the start of each day."]
+    },
+    {
+      "id": "hot-springs",
+      "name": "Hot Springs",
+      "hero": "Pygmalien",
+      "size": "Large",
+      "startingTier": "Silver",
+      "tags": ["Property"],
+      "tooltips": ["Heal.", "Your items gain regeneration for the fight."]
+    },
+    {
+      "id": "bootstraps",
+      "name": "Bootstraps",
+      "hero": "Pygmalien",
+      "size": "Small",
+      "startingTier": "Bronze",
+      "tags": ["Apparel"],
+      "tooltips": ["Your Weapons gain haste for 1 second."]
+    },
+    {
+      "id": "textile-factory",
+      "name": "Textile Factory",
+      "hero": "Pygmalien",
+      "size": "Large",
+      "startingTier": "Gold",
+      "tags": ["Property"],
+      "tooltips": ["Your Apparel items gain shield for the fight.", "Gain gold at the start of each day."]
+    },
+    {
+      "id": "leather-vest",
+      "name": "Leather Vest",
+      "hero": "Pygmalien",
+      "size": "Medium",
+      "startingTier": "Bronze",
+      "tags": ["Apparel"],
+      "tooltips": ["Gain shield."]
+    },
+    {
+      "id": "sunscreen",
+      "name": "Sunscreen",
+      "hero": "Pygmalien",
+      "size": "Small",
+      "startingTier": "Silver",
+      "tags": ["Apparel", "Potion"],
+      "tooltips": ["Gain shield.", "Cleanse burn from yourself."]
+    },
+    {
+      "id": "burning-torch",
+      "name": "Torch",
+      "hero": "Common",
+      "size": "Small",
+      "startingTier": "Bronze",
+      "tags": ["Weapon"],
+      "tooltips": ["Burn the enemy."]
+    },
+    {
+      "id": "molotov",
+      "name": "Molotov Cocktail",
+      "hero": "Common",
+      "size": "Small",
+      "startingTier": "Silver",
+      "tags": ["Weapon", "Potion"],
+      "tooltips": ["Burn the enemy heavily."]
+    },
+    {
+      "id": "fire-potion",
+      "name": "Fire Potion",
+      "hero": "Common",
+      "size": "Small",
+      "startingTier": "Silver",
+      "tags": ["Potion"],
+      "tooltips": ["Your items gain burn for the fight."]
+    },
+    {
+      "id": "poison-potion",
+      "name": "Poison Potion",
+      "hero": "Common",
+      "size": "Small",
+      "startingTier": "Silver",
+      "tags": ["Potion"],
+      "tooltips": ["Your items gain poison for the fight."]
+    },
+    {
+      "id": "bandages",
+      "name": "Bandages",
+      "hero": "Common",
+      "size": "Small",
+      "startingTier": "Bronze",
+      "tags": ["Tool"],
+      "tooltips": ["Heal.", "Gain regeneration for the fight."]
+    },
+    {
+      "id": "energy-potion",
+      "name": "Energy Potion",
+      "hero": "Common",
+      "size": "Small",
+      "startingTier": "Bronze",
+      "tags": ["Potion"],
+      "tooltips": ["Your items gain haste for 3 seconds."]
+    },
+    {
+      "id": "core",
+      "name": "Core",
+      "hero": "Dooley",
+      "size": "Medium",
+      "startingTier": "Bronze",
+      "tags": ["Core", "Tech"],
+      "tooltips": ["Your Tech items gain haste for 2 seconds.", "Gain shield."]
+    },
+    {
+      "id": "friend-bot",
+      "name": "Bot",
+      "hero": "Dooley",
+      "size": "Small",
+      "startingTier": "Bronze",
+      "tags": ["Friend", "Tech"],
+      "tooltips": ["Deal damage.", "This gains damage for each Friend you have."]
+    },
+    {
+      "id": "laser-array",
+      "name": "Laser Array",
+      "hero": "Dooley",
+      "size": "Large",
+      "startingTier": "Gold",
+      "tags": ["Weapon", "Ray", "Tech"],
+      "tooltips": ["Deal heavy damage.", "Multicast 2."]
+    },
+    {
+      "id": "energy-cell",
+      "name": "Energy Cell",
+      "hero": "Dooley",
+      "size": "Small",
+      "startingTier": "Bronze",
+      "tags": ["Tech"],
+      "tooltips": ["Charge your items for 1 second.", "Your Tech items gain haste."]
+    },
+    {
+      "id": "repair-kit",
+      "name": "Repair Kit",
+      "hero": "Dooley",
+      "size": "Small",
+      "startingTier": "Silver",
+      "tags": ["Tool", "Tech"],
+      "tooltips": ["Heal.", "Gain shield."]
+    },
+    {
+      "id": "turbo-charger",
+      "name": "Turbo Charger",
+      "hero": "Dooley",
+      "size": "Medium",
+      "startingTier": "Silver",
+      "tags": ["Tech", "Tool"],
+      "tooltips": ["Your Tool items gain haste for 3 seconds.", "Reduce the cooldown of your items."]
+    },
+    {
+      "id": "freeze-ray",
+      "name": "Freeze Ray",
+      "hero": "Dooley",
+      "size": "Medium",
+      "startingTier": "Silver",
+      "tags": ["Weapon", "Ray", "Tech"],
+      "tooltips": ["Freeze an enemy item for 2 seconds.", "Deal damage."]
+    },
+    {
+      "id": "nanobots",
+      "name": "Nanobots",
+      "hero": "Dooley",
+      "size": "Small",
+      "startingTier": "Gold",
+      "tags": ["Friend", "Tech"],
+      "tooltips": ["Your Friend items gain damage permanently.", "Gain regeneration for the fight."]
+    },
+    {
+      "id": "toxic-fang",
+      "name": "Toxic Fang",
+      "hero": "Mak",
+      "size": "Small",
+      "startingTier": "Bronze",
+      "tags": ["Weapon"],
+      "tooltips": ["Deal damage.", "Apply poison to the enemy."]
+    },
+    {
+      "id": "venom-vial",
+      "name": "Venom Vial",
+      "hero": "Mak",
+      "size": "Small",
+      "startingTier": "Silver",
+      "tags": ["Potion"],
+      "tooltips": ["Your items gain poison for the fight.", "This gains poison permanently."]
+    },
+    {
+      "id": "snake-oil",
+      "name": "Snake Oil",
+      "hero": "Mak",
+      "size": "Small",
+      "startingTier": "Silver",
+      "tags": ["Potion", "Loot"],
+      "tooltips": ["Apply poison to the enemy for each Potion you have.", "Sell this to gain gold."]
+    },
+    {
+      "id": "poison-dart",
+      "name": "Poison Dart",
+      "hero": "Mak",
+      "size": "Small",
+      "startingTier": "Bronze",
+      "tags": ["Weapon"],
+      "tooltips": ["Apply poison to the enemy.", "Multicast 2."]
+    },
+    {
+      "id": "antidote",
+      "name": "Antidote",
+      "hero": "Common",
+      "size": "Small",
+      "startingTier": "Bronze",
+      "tags": ["Potion"],
+      "tooltips": ["Heal.", "Cleanse poison and burn from yourself."]
+    },
+    {
+      "id": "weights",
+      "name": "Weights",
+      "hero": "Pygmalien",
+      "size": "Medium",
+      "startingTier": "Silver",
+      "tags": ["Weapon"],
+      "tooltips": ["Deal damage based on your shield."]
+    },
+    {
+      "id": "shield-generator",
+      "name": "Shield Generator",
+      "hero": "Dooley",
+      "size": "Medium",
+      "startingTier": "Gold",
+      "tags": ["Tech"],
+      "tooltips": ["Gain shield.", "Your items gain shield for each Tech item you have."]
+    },
+    {
+      "id": "icicle",
+      "name": "Icicle",
+      "hero": "Common",
+      "size": "Small",
+      "startingTier": "Bronze",
+      "tags": ["Weapon"],
+      "tooltips": ["Freeze an enemy item for 1 second.", "Deal damage."]
+    },
+    {
+      "id": "cold-snap",
+      "name": "Cold Snap",
+      "hero": "Vanessa",
+      "size": "Small",
+      "startingTier": "Silver",
+      "tags": ["Tool"],
+      "tooltips": ["Freeze all enemy items for 1 second."]
+    },
+    {
+      "id": "sharpening-stone",
+      "name": "Sharpening Stone",
+      "hero": "Common",
+      "size": "Small",
+      "startingTier": "Bronze",
+      "tags": ["Tool"],
+      "tooltips": ["Your Weapons gain damage permanently."]
+    },
+    {
+      "id": "vineyard",
+      "name": "Vineyard",
+      "hero": "Pygmalien",
+      "size": "Large",
+      "startingTier": "Gold",
+      "tags": ["Property"],
+      "tooltips": ["Heal.", "Gain gold at the start of each day.", "This has increased income."]
+    },
+    {
+      "id": "crit-scope",
+      "name": "Scope",
+      "hero": "Common",
+      "size": "Small",
+      "startingTier": "Silver",
+      "tags": ["Tool"],
+      "tooltips": ["Your Weapons gain crit chance permanently."]
+    },
+    {
+      "id": "pirate-flag",
+      "name": "Pirate Flag",
+      "hero": "Vanessa",
+      "size": "Small",
+      "startingTier": "Gold",
+      "tags": ["Aquatic"],
+      "tooltips": ["Your Weapons gain damage for each Aquatic item you have."]
+    },
+    {
+      "id": "campfire",
+      "name": "Campfire",
+      "hero": "Common",
+      "size": "Medium",
+      "startingTier": "Silver",
+      "tags": ["Property"],
+      "tooltips": ["Your items gain burn for the fight.", "Heal."]
+    }
+  ]
+}

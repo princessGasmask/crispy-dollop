@@ -1,0 +1,8 @@
+node_modules/
+dist/
+*.local
+.DS_Store
+
+# Written by `npm run fetch-data`; the app falls back to the committed seed set
+# when it's absent. Not committed because it's large and goes stale each patch.
+src/data/items.generated.json
