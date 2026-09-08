@@ -1,18 +1,11 @@
-import { useEffect, useRef, useState } from 'react'
+import { useRef, useState } from 'react'
 import { Activity, Crosshair, Dices, Heart, ImagePlus, Menu, Plus, Shield, Sparkles, Swords, Trash2, Upload, X, Zap } from 'lucide-react'
-import { loadGameData, saveGameData } from './storage.js'
 
 const seedFighters = [
   { id: 1, name: 'Mara Vex', title: 'The Night Courier', initials: 'MV', color: '#d5714e', portrait: null, grit: 8, wit: 6, luck: 4, trait: 'Quick on her feet', weapon: 'Twin Daggers' },
   { id: 2, name: 'Orion Pike', title: 'The Last Ranger', initials: 'OP', color: '#527f73', portrait: null, grit: 6, wit: 8, luck: 5, trait: 'Never misses twice', weapon: 'Longbow' },
   { id: 3, name: 'June Hollow', title: 'The Wild Card', initials: 'JH', color: '#b08b4f', portrait: null, grit: 5, wit: 5, luck: 9, trait: 'Fortune favors her', weapon: 'Smoke Bombs' },
 ]
-
-const defaults = {
-  fighters: seedFighters,
-  customEvents: ['{winner} discovers an abandoned shelter.', '{winner} outsmarts {loser} at the river crossing.'],
-  weapons: ['Twin Daggers', 'Longbow', 'Smoke Bombs'],
-}
 
 function Portrait({ fighter, size = 'large' }) {
   return <div className={`portrait ${size}`} style={{ '--accent': fighter.color }}>
@@ -25,40 +18,22 @@ function Stat({ icon: Icon, label, value, onChange }) {
 }
 
 function App() {
-  const [savedGame] = useState(() => loadGameData(defaults))
-  const [fighters, setFighters] = useState(savedGame.fighters)
+  const [fighters, setFighters] = useState(seedFighters)
   const [selected, setSelected] = useState(0)
   const [activeTab, setActiveTab] = useState('Roster')
   const [editing, setEditing] = useState(false)
   const [toast, setToast] = useState('')
-  const [customEvents, setCustomEvents] = useState(savedGame.customEvents)
-  const [weapons, setWeapons] = useState(savedGame.weapons)
+  const [customEvents, setCustomEvents] = useState(['{winner} discovers an abandoned shelter.', '{winner} outsmarts {loser} at the river crossing.'])
+  const [weapons, setWeapons] = useState(['Twin Daggers', 'Longbow', 'Smoke Bombs'])
   const [draft, setDraft] = useState('')
   const [battle, setBattle] = useState(null)
   const fileRef = useRef(null)
   const fighter = fighters[selected]
 
-  useEffect(() => {
-    if (saveGameData({ fighters, customEvents, weapons })) return undefined
-    const warning = window.setTimeout(() => setToast('Browser storage is full — remove a large portrait and try again'), 0)
-    return () => window.clearTimeout(warning)
-  }, [fighters, customEvents, weapons])
-
   const update = (key, value) => setFighters(items => items.map((item, i) => i === selected ? { ...item, [key]: value, ...(key === 'name' ? { initials: value.split(' ').map(w => w[0]).join('').slice(0,2).toUpperCase() } : {}) } : item))
   const addFighter = () => { const next = { id: Date.now(), name: 'New Contender', title: 'The Unknown', initials: 'NC', color: '#76678d', portrait: null, grit: 5, wit: 5, luck: 5, trait: 'Unwritten destiny', weapon: 'Bare Hands' }; setFighters([...fighters, next]); setSelected(fighters.length); setEditing(true) }
   const removeFighter = () => { if (fighters.length <= 2) return; setFighters(fighters.filter((_, i) => i !== selected)); setSelected(0) }
-  const upload = e => {
-    const file = e.target.files[0]
-    if (!file) return
-    if (!file.type.startsWith('image/') || file.size > 1_500_000) {
-      setToast('Choose an image smaller than 1.5 MB')
-      return
-    }
-    const reader = new FileReader()
-    reader.onload = () => update('portrait', reader.result)
-    reader.onerror = () => setToast('That portrait could not be read')
-    reader.readAsDataURL(file)
-  }
+  const upload = e => { const file = e.target.files[0]; if (file) update('portrait', URL.createObjectURL(file)) }
   const save = () => { setEditing(false); setToast('Contender saved to your roster'); setTimeout(() => setToast(''), 2500) }
   const addCreation = () => {
     if (!draft.trim()) return

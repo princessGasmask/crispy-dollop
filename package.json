@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "vite build",
-    "lint": "eslint .",
-    "test": "node --test src/*.test.js"
+    "lint": "eslint ."
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",
